@@ -6,4 +6,4 @@
 <br>頁面上的文字就會跟著改變。
 - step3.html
 <br>展示透過屬性methods，並搭配v-on指令來監聽DOM事件的
-<br>方法，簡單的說，此範例在button中調用v-on:click="alert"<br>就可以備js中的methords來監聽使用。
+<br>方法，簡單的說，此範例在button中調用v-on:click="alert"<br>就可以被js中的methords來監聽使用。
