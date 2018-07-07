@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vue 初探</title>
+    </head>
+    <body>
+        <h2>你考試考幾分呢?</h2>
+        <div id="app">
+            <input type="text" v-model="score">
+            <div v-if="score >60">很棒，你及格了</div> 
+            <div v-else="score<=60">不及格</div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+        <script src="step4.js"></script>
+    </body>
+</html>
