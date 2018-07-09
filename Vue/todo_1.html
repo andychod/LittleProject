@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>todo_1</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type="text" placeholder="請輸入待辦事項" 
+            v-on:keyup.enter="addTodo(newTodo)" v-model="newTodo">
+            <h2>事項列表</h2>
+            <ul>
+                <li v-for="todo in todos">
+                    {{todo.content}}
+                    - <a href="#" v-on:click="removeTodo(todo)">刪除</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+        <script src="vue.js"></script>
+    </body>
+</html>
